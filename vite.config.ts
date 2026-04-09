@@ -1,17 +1,31 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import path from 'path';
+
+const monorepoRoot = path.resolve(__dirname, '..');
+const localRailSrc = path.join(monorepoRoot, 'rail', 'src');
+const useLocalRail =
+  process.env.VERCEL !== '1' &&
+  fs.existsSync(path.join(localRailSrc, 'index.ts'));
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
-      '@forgedevstack/anvil': path.resolve(__dirname, '../Anvil/dist/index.mjs'),
-      '@forgedevstack/rail/modules': path.resolve(__dirname, '../rail/src/modules/index.ts'),
-      '@forgedevstack/rail/hooks': path.resolve(__dirname, '../rail/src/hooks/index.ts'),
-      '@forgedevstack/rail/styles.css': path.resolve(__dirname, '../rail/src/styles/rail.css'),
-      '@forgedevstack/rail': path.resolve(__dirname, '../rail/src/index.ts'),
+      '@forgedevstack/anvil': path.resolve(
+        __dirname,
+        './src/shims/forgedevstack-anvil.ts',
+      ),
+      ...(useLocalRail
+        ? {
+            '@forgedevstack/rail/modules': path.join(localRailSrc, 'modules', 'index.ts'),
+            '@forgedevstack/rail/hooks': path.join(localRailSrc, 'hooks', 'index.ts'),
+            '@forgedevstack/rail/styles.css': path.join(localRailSrc, 'styles', 'rail.css'),
+            '@forgedevstack/rail': path.join(localRailSrc, 'index.ts'),
+          }
+        : {}),
     },
   },
 });
