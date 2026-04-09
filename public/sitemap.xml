@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://railjs.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://railjs.com/get-started</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://railjs.com/get-started#installation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://railjs.com/get-started#usage</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://railjs.com/get-started#modules-list</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://railjs.com/get-started#styles</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://railjs.com/get-started#rail-props</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://railjs.com/get-started#railslide-props</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://railjs.com/get-started#use-rail</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://railjs.com/get-started#responsive</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://railjs.com/get-started#virtual</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://railjs.com/get-started#controller</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://railjs.com/get-started#thumbs</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://railjs.com/get-started#effects</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://railjs.com/get-started#autoplay</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://railjs.com/get-started#story-mode</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://railjs.com/demos</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://railjs.com/api</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://railjs.com/changelog</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://railjs.com/studio</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+</urlset>
