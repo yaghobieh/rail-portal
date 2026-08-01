@@ -7,9 +7,34 @@ export const SLIDE_COLORS = [
   'linear-gradient(135deg, #2563eb, #3b82f6)',
 ];
 
-export type DemoKey = 'basic' | 'effects' | 'story' | 'gallery' | 'grid' | 'video';
+export type DemoKey =
+  | 'basic'
+  | 'effects'
+  | 'story'
+  | 'gallery'
+  | 'grid'
+  | 'video'
+  | 'a11y'
+  | 'progress'
+  | 'vertical'
+  | 'freeMode'
+  | 'lazy'
+  | 'breakpoints';
 
-export const DEMO_KEYS: DemoKey[] = ['basic', 'effects', 'story', 'gallery', 'grid', 'video'];
+export const DEMO_KEYS: DemoKey[] = [
+  'basic',
+  'a11y',
+  'progress',
+  'vertical',
+  'freeMode',
+  'lazy',
+  'breakpoints',
+  'effects',
+  'story',
+  'gallery',
+  'grid',
+  'video',
+];
 
 export const DEMO_CODES: Record<string, string> = {
   basic: `<Rail
@@ -94,6 +119,58 @@ import { Navigation, Pagination } from '@forgedevstack/rail/modules';
   <RailSlide>
     <RailVideo slideIndex={2} src="/another.mp4" muted />
   </RailSlide>
+</Rail>`,
+
+  a11y: `<Rail
+  modules={[A11y, Keyboard, Navigation, Pagination]}
+  a11y={{ focusOnChange: true, rovingTabindex: true }}
+  keyboard
+  navigation
+  pagination={{ clickable: true }}
+>
+  <RailSlide>Slide 1</RailSlide>
+</Rail>`,
+
+  progress: `<Rail modules={[Pagination]} pagination={{ type: 'progressbar' }}>
+  <RailSlide>Slide 1</RailSlide>
+</Rail>
+
+<Rail modules={[Pagination]} pagination={{ type: 'fraction' }}>
+  <RailSlide>Slide 1</RailSlide>
+</Rail>`,
+
+  vertical: `<Rail
+  direction="vertical"
+  modules={[Navigation, Pagination, Keyboard]}
+  pagination={{ type: 'progressbar' }}
+  style={{ height: 360 }}
+>
+  <RailSlide>Slide 1</RailSlide>
+</Rail>`,
+
+  freeMode: `<Rail
+  modules={[FreeMode]}
+  freeMode={{ momentum: true, momentumBounce: true }}
+  slidesPerView={2.2}
+>
+  <RailSlide>Slide 1</RailSlide>
+</Rail>`,
+
+  lazy: `<Rail modules={[Lazy, Navigation]} lazy navigation>
+  <RailSlide lazy>
+    <img data-src="/photo.jpg" className="rail-lazy" alt="Lazy" />
+  </RailSlide>
+</Rail>`,
+
+  breakpoints: `import { createBreakpoints } from '@forgedevstack/rail';
+
+const breakpoints = createBreakpoints(
+  { 0: 1, 640: 2, 1024: 3 },
+  { spaceBetween: { 0: 8, 640: 16, 1024: 24 } },
+);
+
+<Rail breakpoints={breakpoints} modules={[Navigation, Pagination]} navigation pagination>
+  <RailSlide>Slide 1</RailSlide>
 </Rail>`,
 };
 

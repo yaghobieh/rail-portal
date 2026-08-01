@@ -144,6 +144,12 @@ export const en: TranslationStrings = {
     gallery: { title: 'Image Gallery', description: 'Main slider with thumbnail sync and zoom.' },
     grid: { title: 'Multi-Row Grid', description: 'Grid layout with multiple rows and columns.' },
     video: { title: 'Video Slides', description: 'Auto-play video in regular carousels and story mode.' },
+    a11y: { title: 'Accessibility', description: 'Roving tabindex, focus management, and keyboard carousel controls.' },
+    progress: { title: 'Progress & Fraction', description: 'Continuous progressbar and fraction indicators.' },
+    vertical: { title: 'Vertical Rail', description: 'Vertical orientation with side progressbar polish.' },
+    freeMode: { title: 'Free Mode Momentum', description: 'Drag free-scroll with requestAnimationFrame momentum decay.' },
+    lazy: { title: 'Lazy Loading', description: 'Defer slide images until they are near the viewport.' },
+    breakpoints: { title: 'Breakpoint Helpers', description: 'createBreakpoints maps for responsive slidesPerView.' },
     viewDemo: 'View Demo',
   },
 

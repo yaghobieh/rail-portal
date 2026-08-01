@@ -144,6 +144,12 @@ export const es: TranslationStrings = {
     gallery: { title: 'Galería de Imágenes', description: 'Slider principal con sincronización de miniaturas y zoom.' },
     grid: { title: 'Cuadrícula Multi-Fila', description: 'Diseño de cuadrícula con múltiples filas y columnas.' },
     video: { title: 'Slides de Video', description: 'Reproducción automática de video en carruseles y modo historia.' },
+    a11y: { title: 'Accesibilidad', description: 'Roving tabindex, gestión de foco y controles de teclado.' },
+    progress: { title: 'Progreso y Fracción', description: 'Barra de progreso continua e indicador de fracción.' },
+    vertical: { title: 'Rail Vertical', description: 'Orientación vertical con barra de progreso lateral.' },
+    freeMode: { title: 'Modo Libre', description: 'Desplazamiento libre con momentum por requestAnimationFrame.' },
+    lazy: { title: 'Carga Diferida', description: 'Carga diferida de imágenes hasta que están cerca del viewport.' },
+    breakpoints: { title: 'Helpers de Breakpoints', description: 'createBreakpoints para slidesPerView responsivo.' },
     viewDemo: 'Ver Demo',
   },
 

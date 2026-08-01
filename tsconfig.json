@@ -18,11 +18,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@forgedevstack/rail": ["../src/index.ts"],
-      "@forgedevstack/rail/modules": ["../src/modules/index.ts"],
-      "@forgedevstack/rail/hooks": ["../src/hooks/index.ts"]
+      "@forgedevstack/rail": ["../rail/src/index.ts"],
+      "@forgedevstack/rail/modules": ["../rail/src/modules/index.ts"],
+      "@forgedevstack/rail/hooks": ["../rail/src/hooks/index.ts"]
     }
   },
-  "include": ["src", "../src"],
+  "include": ["src", "../rail/src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

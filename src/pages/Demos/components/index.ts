@@ -1,1 +1,13 @@
 export { DemoSection } from './DemoSection';
+export { BasicDemo } from './BasicDemo';
+export { EffectsDemo } from './EffectsDemo';
+export { StoryModeDemo } from './StoryModeDemo';
+export { GalleryDemo } from './GalleryDemo';
+export { GridDemo } from './GridDemo';
+export { VideoDemo } from './VideoDemo';
+export { A11yDemo } from './A11yDemo';
+export { ProgressDemo } from './ProgressDemo';
+export { VerticalDemo } from './VerticalDemo';
+export { FreeModeDemo } from './FreeModeDemo';
+export { LazyDemo } from './LazyDemo';
+export { BreakpointsDemo } from './BreakpointsDemo';
