@@ -8,6 +8,12 @@ import { StoryModeDemo } from './StoryModeDemo';
 import { GalleryDemo } from './GalleryDemo';
 import { GridDemo } from './GridDemo';
 import { VideoDemo } from './VideoDemo';
+import { A11yDemo } from './A11yDemo';
+import { ProgressDemo } from './ProgressDemo';
+import { VerticalDemo } from './VerticalDemo';
+import { FreeModeDemo } from './FreeModeDemo';
+import { LazyDemo } from './LazyDemo';
+import { BreakpointsDemo } from './BreakpointsDemo';
 
 const DEMO_COMPONENTS: Record<DemoKey, FC> = {
   basic: BasicDemo,
@@ -16,6 +22,12 @@ const DEMO_COMPONENTS: Record<DemoKey, FC> = {
   gallery: GalleryDemo,
   grid: GridDemo,
   video: VideoDemo,
+  a11y: A11yDemo,
+  progress: ProgressDemo,
+  vertical: VerticalDemo,
+  freeMode: FreeModeDemo,
+  lazy: LazyDemo,
+  breakpoints: BreakpointsDemo,
 };
 
 interface DemoSectionProps {

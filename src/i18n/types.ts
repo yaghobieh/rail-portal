@@ -87,6 +87,12 @@ export interface TranslationStrings {
     gallery: { title: string; description: string };
     grid: { title: string; description: string };
     video: { title: string; description: string };
+    a11y: { title: string; description: string };
+    progress: { title: string; description: string };
+    vertical: { title: string; description: string };
+    freeMode: { title: string; description: string };
+    lazy: { title: string; description: string };
+    breakpoints: { title: string; description: string };
     viewDemo: string;
   };
 

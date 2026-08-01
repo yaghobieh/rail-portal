@@ -5,9 +5,24 @@ import { useI18n } from '@/i18n';
 
 const RELEASES = [
   {
+    version: '1.0.1',
+    date: '2026-08-01',
+    latest: true,
+    highlights: [
+      'A11y: roving tabindex, focus-on-change, in-carousel keyboard arrows, aria-roledescription polish',
+      'Autoplay pauses when prefers-reduced-motion is set',
+      'Lazy module + RailSlide lazy for deferred image loading',
+      'Pagination progressbar tracks continuous progress; vertical progressbar support',
+      'FreeMode momentum via requestAnimationFrame decay',
+      'createBreakpoints / slidesPerViewAt helpers',
+      'Fixed published styles.css export (dist/styles.css now ships)',
+      'New portal demos: a11y, progress, vertical, freeMode, lazy, breakpoints',
+    ],
+  },
+  {
     version: '1.0.0',
     date: '2026-03-24',
-    latest: true,
+    latest: false,
     highlights: [
       'Core carousel engine with touch, drag, and momentum physics',
       '25 modules: Navigation, Pagination, Autoplay, Keyboard, Mousewheel, Virtual, Parallax, FreeMode, Grid, Manipulation, Zoom, Controller, A11y, History, HashNavigation, Thumbs, Scrollbar + 7 effects + StoryMode',
