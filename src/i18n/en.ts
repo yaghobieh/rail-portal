@@ -63,6 +63,9 @@ export const en: TranslationStrings = {
     hashNavigation: { title: 'Hash Navigation', description: 'URL hash-based slide navigation with watch mode.' },
     thumbs: { title: 'Thumbs', description: 'Thumbnail gallery sync with active class and auto-scroll.' },
     storyMode: { title: 'Story Mode', description: 'Instagram-style stories with progress bars and timed advance.' },
+    marquee: { title: 'Marquee', description: 'Continuous strip that loops, pauses off screen, and can fade its edges.' },
+    counter: { title: 'Counter', description: 'Live 1 / 8 indicator that updates when the slide changes.' },
+    autoHeight: { title: 'Auto Height', description: 'Track height follows the active slide.' },
   },
 
   effects: {
@@ -116,6 +119,9 @@ export const en: TranslationStrings = {
       effectCreative: 'Creative Effect module',
       thumbs: 'Thumbs module',
       storyMode: 'Story Mode module',
+      marquee: 'Marquee module',
+      counter: 'Counter module',
+      autoHeight: 'Auto Height module',
     },
   },
 
@@ -150,6 +156,8 @@ export const en: TranslationStrings = {
     freeMode: { title: 'Free Mode Momentum', description: 'Drag free-scroll with requestAnimationFrame momentum decay.' },
     lazy: { title: 'Lazy Loading', description: 'Defer slide images until they are near the viewport.' },
     breakpoints: { title: 'Breakpoint Helpers', description: 'createBreakpoints maps for responsive slidesPerView.' },
+    marquee: { title: 'Marquee', description: 'A continuous strip that loops, fades at the edges, and pauses off screen.' },
+    autoHeight: { title: 'Counter and auto height', description: 'A live slide counter, and a track that grows with the active slide.' },
     viewDemo: 'View Demo',
   },
 

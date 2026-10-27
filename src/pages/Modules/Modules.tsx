@@ -113,12 +113,46 @@ const CODE_AUTOPLAY = `import { Autoplay, Pagination } from '@forgedevstack/rail
   <RailSlide>Slide 3</RailSlide>
 </Rail>`;
 
+const CODE_MARQUEE = `import { Marquee } from '@forgedevstack/rail/modules';
+
+<Rail
+  modules={[Marquee]}
+  marquee={{
+    duration: 24000,
+    fade: true,
+    pauseOnHover: true,
+    pauseOffscreen: true,
+  }}
+>
+  <RailSlide>Aero</RailSlide>
+  <RailSlide>Rail</RailSlide>
+  <RailSlide>Bear</RailSlide>
+</Rail>`;
+
+const CODE_COUNTER = `import { Counter, Navigation } from '@forgedevstack/rail/modules';
+
+<Rail modules={[Counter, Navigation]} navigation counter={{ separator: ' / ' }}>
+  <RailSlide>Slide 1</RailSlide>
+  <RailSlide>Slide 2</RailSlide>
+  <RailSlide>Slide 3</RailSlide>
+</Rail>`;
+
+const CODE_AUTOHEIGHT = `import { AutoHeight, Navigation } from '@forgedevstack/rail/modules';
+
+<Rail modules={[AutoHeight, Navigation]} navigation>
+  <RailSlide>Short</RailSlide>
+  <RailSlide>A taller slide. The track height follows it.</RailSlide>
+</Rail>`;
+
 const TOC = [
   { id: 'responsive', label: 'Responsive' },
   { id: 'virtual', label: 'Virtual Slides' },
   { id: 'controller', label: 'Controller' },
   { id: 'thumbs', label: 'Thumbs' },
   { id: 'autoplay', label: 'Autoplay' },
+  { id: 'marquee', label: 'Marquee' },
+  { id: 'counter', label: 'Counter' },
+  { id: 'autoheight', label: 'Auto Height' },
 ];
 
 export const ModulesPage: FC = () => {
@@ -127,7 +161,7 @@ export const ModulesPage: FC = () => {
   const mutedText = isDark ? '#64748b' : '#94a3b8';
 
   return (
-    <DocLayout title="Modules" description="Detailed guides for Rail's core modules: responsive breakpoints, virtual slides, controller sync, thumbs gallery, and autoplay." toc={TOC}>
+    <DocLayout title="Modules" description="Guides for Rail modules, including marquee, counter, and auto height." toc={TOC}>
       <DocSection id="responsive" title="Responsive Breakpoints">
         <Typography variant="body2" style={{ color: mutedText }} className="mb-4">
           Pass a <code className="text-rail-400">breakpoints</code> object to override any option at specific viewport widths:
@@ -161,6 +195,27 @@ export const ModulesPage: FC = () => {
           Configure automatic slide transitions with delay, pause on hover, and interaction control:
         </Typography>
         <CodeBlock code={CODE_AUTOPLAY} language="tsx" title="Autoplay" copyable showLineNumbers />
+      </DocSection>
+
+      <DocSection id="marquee" title="Marquee">
+        <Typography variant="body2" style={{ color: mutedText }} className="mb-4">
+          Marquee clones the slides and scrolls them in a loop. It pauses on hover, on focus, and while the carousel is outside the viewport. It stops when reduced motion is on. Set <code className="text-rail-400">fade</code> to soften the left and right edges.
+        </Typography>
+        <CodeBlock code={CODE_MARQUEE} language="tsx" title="Marquee" copyable showLineNumbers />
+      </DocSection>
+
+      <DocSection id="counter" title="Counter">
+        <Typography variant="body2" style={{ color: mutedText }} className="mb-4">
+          Counter renders a live indicator, such as 1 / 8, and updates it when the slide changes. Pass <code className="text-rail-400">separator</code> to change the divider, or <code className="text-rail-400">el</code> to write into an element you already rendered.
+        </Typography>
+        <CodeBlock code={CODE_COUNTER} language="tsx" title="Counter" copyable showLineNumbers />
+      </DocSection>
+
+      <DocSection id="autoheight" title="Auto Height">
+        <Typography variant="body2" style={{ color: mutedText }} className="mb-4">
+          AutoHeight sets the track height from the active slide, so a short slide does not leave a tall empty frame and a tall slide is not clipped.
+        </Typography>
+        <CodeBlock code={CODE_AUTOHEIGHT} language="tsx" title="Auto Height" copyable showLineNumbers />
       </DocSection>
     </DocLayout>
   );
