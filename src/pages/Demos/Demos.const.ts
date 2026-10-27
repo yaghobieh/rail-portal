@@ -19,9 +19,13 @@ export type DemoKey =
   | 'vertical'
   | 'freeMode'
   | 'lazy'
-  | 'breakpoints';
+  | 'breakpoints'
+  | 'marquee'
+  | 'autoHeight';
 
 export const DEMO_KEYS: DemoKey[] = [
+  'marquee',
+  'autoHeight',
   'basic',
   'a11y',
   'progress',
@@ -171,6 +175,25 @@ const breakpoints = createBreakpoints(
 
 <Rail breakpoints={breakpoints} modules={[Navigation, Pagination]} navigation pagination>
   <RailSlide>Slide 1</RailSlide>
+</Rail>`,
+
+  marquee: `import { Marquee } from '@forgedevstack/rail/modules';
+
+<Rail
+  modules={[Marquee]}
+  marquee={{ duration: 18000, fade: true }}
+  allowTouchMove={false}
+>
+  <RailSlide style={{ width: 220 }}>Aero</RailSlide>
+  <RailSlide style={{ width: 220 }}>Rail</RailSlide>
+  <RailSlide style={{ width: 220 }}>Bear</RailSlide>
+</Rail>`,
+
+  autoHeight: `import { AutoHeight, Counter, Navigation } from '@forgedevstack/rail/modules';
+
+<Rail modules={[AutoHeight, Counter, Navigation]} navigation>
+  <RailSlide>Short</RailSlide>
+  <RailSlide>A taller slide with more lines.</RailSlide>
 </Rail>`,
 };
 

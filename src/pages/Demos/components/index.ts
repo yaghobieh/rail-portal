@@ -11,3 +11,5 @@ export { VerticalDemo } from './VerticalDemo';
 export { FreeModeDemo } from './FreeModeDemo';
 export { LazyDemo } from './LazyDemo';
 export { BreakpointsDemo } from './BreakpointsDemo';
+export { MarqueeDemo } from './MarqueeDemo';
+export { AutoHeightDemo } from './AutoHeightDemo';

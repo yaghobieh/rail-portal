@@ -4,6 +4,7 @@ export const MODULE_KEYS = [
   'navigation', 'pagination', 'scrollbar', 'autoplay', 'keyboard', 'mousewheel',
   'virtual', 'parallax', 'freeMode', 'grid', 'manipulation', 'zoom',
   'controller', 'a11y', 'history', 'hashNavigation', 'thumbs', 'storyMode',
+  'marquee', 'counter', 'autoHeight',
 ];
 
 export const EFFECT_KEYS = ['fade', 'cube', 'flip', 'coverflow', 'cards', 'creative'];

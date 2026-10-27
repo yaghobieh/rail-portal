@@ -75,6 +75,9 @@ export const MODULES_LIST: ModuleListItem[] = [
   { name: 'EffectCreative', descKey: 'effectCreative' },
   { name: 'Thumbs', descKey: 'thumbs' },
   { name: 'StoryMode', descKey: 'storyMode' },
+  { name: 'Marquee', descKey: 'marquee' },
+  { name: 'Counter', descKey: 'counter' },
+  { name: 'AutoHeight', descKey: 'autoHeight' },
 ];
 
 export const TOC = [

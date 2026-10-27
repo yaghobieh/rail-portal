@@ -93,6 +93,8 @@ export interface TranslationStrings {
     freeMode: { title: string; description: string };
     lazy: { title: string; description: string };
     breakpoints: { title: string; description: string };
+    marquee: { title: string; description: string };
+    autoHeight: { title: string; description: string };
     viewDemo: string;
   };
 

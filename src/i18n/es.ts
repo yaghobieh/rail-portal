@@ -63,6 +63,9 @@ export const es: TranslationStrings = {
     hashNavigation: { title: 'Navegación Hash', description: 'Navegación de slides basada en hash URL.' },
     thumbs: { title: 'Miniaturas', description: 'Sincronización de galería de miniaturas con clase activa.' },
     storyMode: { title: 'Modo Historia', description: 'Historias estilo Instagram con barras de progreso y avance temporizado.' },
+    marquee: { title: 'Marquee', description: 'Tira continua que hace bucle, se pausa fuera de pantalla y puede desvanecer los bordes.' },
+    counter: { title: 'Contador', description: 'Indicador 1 / 8 en vivo que se actualiza al cambiar de slide.' },
+    autoHeight: { title: 'Altura automática', description: 'La altura de la pista sigue al slide activo.' },
   },
 
   effects: {
@@ -116,6 +119,9 @@ export const es: TranslationStrings = {
       effectCreative: 'Módulo de Efecto Creativo',
       thumbs: 'Módulo de Miniaturas',
       storyMode: 'Módulo de Modo Historia',
+      marquee: 'Módulo Marquee',
+      counter: 'Módulo de Contador',
+      autoHeight: 'Módulo de Altura automática',
     },
   },
 
@@ -150,6 +156,8 @@ export const es: TranslationStrings = {
     freeMode: { title: 'Modo Libre', description: 'Desplazamiento libre con momentum por requestAnimationFrame.' },
     lazy: { title: 'Carga Diferida', description: 'Carga diferida de imágenes hasta que están cerca del viewport.' },
     breakpoints: { title: 'Helpers de Breakpoints', description: 'createBreakpoints para slidesPerView responsivo.' },
+    marquee: { title: 'Marquee', description: 'Tira continua que hace bucle, desvanece los bordes y se pausa fuera de pantalla.' },
+    autoHeight: { title: 'Contador y altura automática', description: 'Contador de slides en vivo, y una pista que crece con el slide activo.' },
     viewDemo: 'Ver Demo',
   },
 

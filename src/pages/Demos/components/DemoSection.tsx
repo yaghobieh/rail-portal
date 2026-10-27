@@ -14,6 +14,8 @@ import { VerticalDemo } from './VerticalDemo';
 import { FreeModeDemo } from './FreeModeDemo';
 import { LazyDemo } from './LazyDemo';
 import { BreakpointsDemo } from './BreakpointsDemo';
+import { MarqueeDemo } from './MarqueeDemo';
+import { AutoHeightDemo } from './AutoHeightDemo';
 
 const DEMO_COMPONENTS: Record<DemoKey, FC> = {
   basic: BasicDemo,
@@ -28,6 +30,8 @@ const DEMO_COMPONENTS: Record<DemoKey, FC> = {
   freeMode: FreeModeDemo,
   lazy: LazyDemo,
   breakpoints: BreakpointsDemo,
+  marquee: MarqueeDemo,
+  autoHeight: AutoHeightDemo,
 };
 
 interface DemoSectionProps {

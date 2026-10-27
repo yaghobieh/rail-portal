@@ -5,9 +5,22 @@ import { useI18n } from '@/i18n';
 
 const RELEASES = [
   {
+    version: '1.0.2',
+    date: '2026-10-27',
+    latest: true,
+    highlights: [
+      'Marquee module: continuous horizontal strip that loops by cloning slides',
+      'Pauses on hover, on focus, and while the carousel is off screen',
+      'marquee.fade fades the left and right edges',
+      'Stops when prefers-reduced-motion is set, unless marquee.pauseOnReducedMotion is false',
+      'Counter module: live 1 / 8 indicator that updates on slide change',
+      'AutoHeight module: track height follows the active slide',
+    ],
+  },
+  {
     version: '1.0.1',
     date: '2026-08-01',
-    latest: true,
+    latest: false,
     highlights: [
       'A11y: roving tabindex, focus-on-change, in-carousel keyboard arrows, aria-roledescription polish',
       'Autoplay pauses when prefers-reduced-motion is set',
